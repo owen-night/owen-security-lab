@@ -18,8 +18,10 @@ This repository is a daily archive of security research and practical implementa
 | **Day 05** | Logic Optimization | Refactored core security functions for better performance. |
 | **Day 06** | Database Simulation | Managed multiple user records using structured JSON. |
 | **Day 07** | Cryptography (Hashing) | Implemented SHA-256 password encryption for secure storage. |
+| **Day 08** | Salted Hashing | Implemented random salt generation and credential verification logic. |
 
 ## 🛠️ Security Principles Applied
 1. **Data Separation:** Sensitive data files (.json) are strictly excluded via `.gitignore` to prevent exposure.
 2. **Modular Design:** Functions are compartmentalized by specific security tasks to ensure scalability.
 3. **Hash Integrity:** Implemented hashing (SHA-256) to ensure credentials are never stored in plain text.
+4. **Brute-Force Resistance:** Utilized unique random salts per user to neutralize Rainbow Table attacks and increase hashing complexity.
